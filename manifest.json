@@ -1,0 +1,10 @@
+{
+  "id": "mobie-cc",
+  "name": "Mobie CC",
+  "version": "0.3.1",
+  "minAppVersion": "1.13.6",
+  "description": "Turn your Obsidian Vault into a mobile knowledge and work companion that grows with you.",
+  "author": "老码小张",
+  "authorUrl": "https://github.com/bravekingzhang",
+  "isDesktopOnly": false
+}

@@ -1,0 +1,42 @@
+Mobie CC Proprietary License
+
+Copyright (C) 2026 by 老码小张
+All rights reserved.
+
+1. License grant
+
+Subject to a valid trial or activation authorization, the copyright holder grants the authorized user a limited, non-exclusive, non-transferable, and non-sublicensable right to install and use the compiled Mobie CC plugin for personal or internal business purposes during the authorized term.
+
+2. Activation and term
+
+The license term and device scope are determined by the activation code issued for the purchase. A permanent activation code grants use for an indefinite term on its authorized installation. A one-month activation code grants use until its stated expiration date. An activation code does not transfer ownership of the software or source code.
+
+3. Restrictions
+
+Unless applicable law expressly permits otherwise, the user may not:
+
+- redistribute, publish, rent, lease, sell, sublicense, or commercially share the plugin or activation code;
+- modify, translate, adapt, or create derivative works from the plugin;
+- reverse engineer, decompile, disassemble, or otherwise attempt to derive the source code;
+- bypass, disable, tamper with, or provide instructions or tools primarily intended to defeat the activation mechanism;
+- remove or alter copyright, license, or attribution notices.
+
+4. Ownership and source code
+
+Mobie CC is proprietary, closed-source software. All rights not expressly granted by this license remain with 老码小张. This license does not provide public access to the source code. Any source access provided to Obsidian reviewers is solely for review and does not grant redistribution rights.
+
+5. Third-party software
+
+Third-party components remain governed by their respective licenses. Required notices are provided in THIRD_PARTY_NOTICES.md. Those third-party licenses apply only to the corresponding components and do not change the proprietary license of Mobie CC as a whole.
+
+6. Disclaimer
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, TO THE MAXIMUM EXTENT PERMITTED BY LAW. THE COPYRIGHT HOLDER IS NOT LIABLE FOR INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES ARISING FROM THE USE OF THE SOFTWARE.
+
+7. Termination
+
+This license terminates automatically if the user materially violates its terms. Upon termination, the user must stop using and distributing any copies of Mobie CC in their possession, except for user-owned Vault data and backups that do not contain the plugin binaries.
+
+8. Contact
+
+Licensing and support: 老码小张 <1595819400@qq.com>
