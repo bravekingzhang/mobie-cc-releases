@@ -1,5 +1,41 @@
 # Mobie CC
 
+## English
+
+Mobie CC is a mobile-first knowledge and work agent for Obsidian. It helps you recover useful ideas, decisions, and source material from your Vault, continue working in your preferred style, and turn valuable results into reviewable notes instead of losing them in a chat window.
+
+Agent orchestration, Vault search, tool execution, review workflows, and long-term memory management run inside the current Obsidian app. Model inference is sent directly to the third-party model API configured by the user.
+
+### What it can do
+
+- Search and read notes within the allowed Vault scope, with source references in answers.
+- Improve the current note with structure, supporting evidence, counterarguments, and previously written material.
+- Add explicit note or folder context through `@` mentions and the reference picker.
+- Propose knowledge and long-term memory updates for review before anything is written back.
+- Learn confirmed goals, writing preferences, work patterns, and Vault conventions through bounded Profile, Style, Work Mode, and Vault memory files.
+- Read public HTTPS pages while respecting a configurable blocked-domain list.
+- Use privacy mode to disable Vault, web, candidate, and long-term memory tools for a conversation.
+
+Mobie CC does not start a shell, Claude Code, Codex, or another local process. It does not upload the entire Vault by default.
+
+### Installation
+
+After the plugin is accepted into Community Plugins, search for **Mobie CC** in Obsidian under **Settings → Community plugins → Browse**. For manual installation, download `mobie-cc-x.y.z.zip` from [GitHub Releases](https://github.com/bravekingzhang/mobie-cc-releases/releases), extract it, and place the complete `mobie-cc` folder under `<Vault>/.obsidian/plugins/`. See the [installation guide](INSTALLATION.md) for details.
+
+The minimum supported Obsidian version is `1.13.6`. Android has completed the primary device test pass; iOS and iPadOS validation is still in progress.
+
+### Model, privacy, and activation
+
+Users provide their own compatible model API endpoint, model name, and API key. The API key is stored through Obsidian `SecretStorage`. Conversation content, confirmed long-term memory, and note excerpts or web content requested by tools may be sent to the configured model provider. Mobie CC has no client telemetry, hosted model gateway, or activation server. See the [privacy notice](PRIVACY.md).
+
+The first installation includes a 24-hour full trial. A permanent activation code costs CNY 99, and a one-month activation code costs CNY 19.9. To purchase a code, contact 老码小张 at `1595819400@qq.com`. Expiration never locks the user's notes, existing conversations, candidates, memories, or settings.
+
+Mobie CC is proprietary commercial software. This public repository contains user documentation, metadata, version mappings, and compiled Release assets; TypeScript source code is not published to end users. Source access can be provided to Obsidian reviewers under the applicable review arrangement. See [LICENSE](LICENSE) and [third-party notices](THIRD_PARTY_NOTICES.md).
+
+Support and issue reporting: [GitHub Issues](https://github.com/bravekingzhang/mobie-cc-releases/issues) or `1595819400@qq.com`.
+
+## 中文说明
+
 Mobie CC 是运行在 Obsidian 移动端里的知识与工作 Agent。它能从你的 Vault 找回旧观点、决定和素材，延续你确认过的表达偏好与工作方式，陪你推进当前任务，再把值得保留的结果整理成待审核内容。
 
 Agent 编排、Vault 检索、工具执行、候选审核和长期记忆都在当前 Obsidian 设备内完成；模型推理会直接请求你自己配置的第三方模型 API。
@@ -24,7 +60,7 @@ Mobie CC 不启动 Shell、Claude Code、Codex 或其他本地进程，也不会
 
 ### ZIP 手动安装
 
-从 [Releases](https://github.com/private-coder-zhang/mobie-cc-releases/releases) 下载 `mobie-cc-x.y.z.zip`，解压后把整个 `mobie-cc` 文件夹放入：
+从 [Releases](https://github.com/bravekingzhang/mobie-cc-releases/releases) 下载 `mobie-cc-x.y.z.zip`，解压后把整个 `mobie-cc` 文件夹放入：
 
 ```text
 <你的 Vault>/.obsidian/plugins/
@@ -63,7 +99,7 @@ Mobie CC 是闭源商业插件。公开仓库只提供用户文档、manifest、
 ## 支持
 
 - 授权、购买、隐私与技术支持：老码小张 <1595819400@qq.com>
-- 问题反馈：[GitHub Issues](https://github.com/private-coder-zhang/mobie-cc-releases/issues)
+- 问题反馈：[GitHub Issues](https://github.com/bravekingzhang/mobie-cc-releases/issues)
 
 ## License
 
