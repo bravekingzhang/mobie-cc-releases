@@ -20,7 +20,7 @@ Mobie CC does not start a shell, Claude Code, Codex, or another local process. I
 
 ### Installation
 
-After the plugin is accepted into Community Plugins, search for **Mobie CC** in Obsidian under **Settings → Community plugins → Browse**. For manual installation, download `mobie-cc-x.y.z.zip` from [GitHub Releases](https://github.com/bravekingzhang/mobie-cc-releases/releases), extract it, and place the complete `mobie-cc` folder under `<Vault>/.obsidian/plugins/`. See the [installation guide](INSTALLATION.md) for details.
+Mobie CC remains closed source and is not listed in the Community Plugins directory because the directory currently requires source files in the public repository. To install with BRAT, install and enable **BRAT**, run `BRAT: Add a beta plugin for testing`, and add `https://github.com/bravekingzhang/mobie-cc-releases`. For manual installation, download `mobie-cc-x.y.z.zip` from [GitHub Releases](https://github.com/bravekingzhang/mobie-cc-releases/releases), extract it, and place the complete `mobie-cc` folder under `<Vault>/.obsidian/plugins/`. See the [installation guide](INSTALLATION.md) for details.
 
 The minimum supported Obsidian version is `1.13.6`. Android has completed the primary device test pass; iOS and iPadOS validation is still in progress.
 
@@ -30,7 +30,7 @@ Users provide their own compatible model API endpoint, model name, and API key. 
 
 The first installation includes a 24-hour full trial. A permanent activation code costs CNY 99, and a one-month activation code costs CNY 19.9. To purchase a code, contact 老码小张 at `1595819400@qq.com`. Expiration never locks the user's notes, existing conversations, candidates, memories, or settings.
 
-Mobie CC is proprietary commercial software. This public repository contains user documentation, metadata, version mappings, and compiled Release assets; TypeScript source code is not published to end users. Source access can be provided to Obsidian reviewers under the applicable review arrangement. See [LICENSE](LICENSE) and [third-party notices](THIRD_PARTY_NOTICES.md).
+Mobie CC is proprietary commercial software. This public repository contains user documentation, metadata, version mappings, and compiled Release assets; TypeScript source code is not published. BRAT installation does not mean that Mobie CC is listed or manually reviewed by Obsidian. See [LICENSE](LICENSE) and [third-party notices](THIRD_PARTY_NOTICES.md).
 
 Support and issue reporting: [GitHub Issues](https://github.com/bravekingzhang/mobie-cc-releases/issues) or `1595819400@qq.com`.
 
@@ -54,9 +54,9 @@ Mobie CC 不启动 Shell、Claude Code、Codex 或其他本地进程，也不会
 
 ## 安装
 
-### Obsidian Community Plugins
+### 通过 BRAT 安装与更新（推荐）
 
-正式上架后，在 Obsidian 中打开“设置 → 第三方插件 → 浏览”，搜索 **Mobie CC**，点击“安装”并启用。
+Mobie CC 保持闭源，因此不在当前要求公开源码的 Community Plugins 目录中发布。先从 Obsidian 第三方插件市场安装并启用 **BRAT**，然后执行 `BRAT: Add a beta plugin for testing`，添加仓库 `https://github.com/bravekingzhang/mobie-cc-releases`。安装完成后，在第三方插件列表中启用 Mobie CC。
 
 ### ZIP 手动安装
 
@@ -94,7 +94,7 @@ API Key 保存于 Obsidian `SecretStorage`。模型费用由用户与所选模�
 
 ## 闭源披露
 
-Mobie CC 是闭源商业插件。公开仓库只提供用户文档、manifest、版本映射和编译后的 Release 资产；TypeScript 源码不向普通用户公开。源码会按照 Obsidian 对闭源插件的逐案审查要求向审核方提供访问，不使用代码混淆隐藏插件用途。
+Mobie CC 是闭源商业插件。公开仓库只提供用户文档、manifest、版本映射和编译后的 Release 资产，TypeScript 源码不公开。当前 Community Plugins 目录要求公开仓库包含源码，因此 Mobie CC 不在该目录发布，也不会通过假源文件或混淆产物绕过审查。通过 BRAT 安装只是一种 Release 安装方式，不代表 Mobie CC 已被目录收录或人工审核。
 
 ## 支持
 

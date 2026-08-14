@@ -1,6 +1,6 @@
 # Mobie CC 安装指南
 
-Mobie CC 支持两种安装方式：通过 ZIP 文件手动安装，或在审核通过后从 Obsidian 官方第三方插件市场安装。两种方式安装的是同一组插件文件，已有 Vault 笔记不会被移动或改名。
+Mobie CC 是闭源商业插件，当前通过两种方式安装：使用 BRAT 从 GitHub Release 安装与更新，或下载 ZIP 手动安装。两种方式安装的是同一组插件文件，已有 Vault 笔记不会被移动或改名。Mobie CC 不在 Obsidian 官方第三方插件目录中发布。
 
 ## 方式一：通过 ZIP 文件手动安装
 
@@ -53,23 +53,28 @@ Mobie CC 支持两种安装方式：通过 ZIP 文件手动安装，或在审核
 - **覆盖后还是旧版本**：完全结束 Obsidian 进程后再启动，必要时先关闭插件再覆盖。
 - **模型无法回答**：到 Mobie CC 设置页运行“测试连接”，确认协议、Base URL、模型编码和 API Key；模型必须支持结构化工具调用。
 - **试用结束后无法继续提问**：在 Mobie CC 设置页复制本机安装码，按发布方提供的方式获取并输入激活码。未激活不会锁住笔记和已有对话。
-- **iPhone/iPad 手动安装**：只有当所用文件管理工具能够访问该 Vault 的隐藏 `.obsidian/plugins/` 目录时才适用；否则建议使用官方市场安装。
+- **iPhone/iPad 手动安装**：只有当所用文件管理工具能够访问该 Vault 的隐藏 `.obsidian/plugins/` 目录时才适用；否则建议使用下方 BRAT 安装方式。
 
-## 方式二：通过 Obsidian 官方第三方插件市场安装
+## 方式二：通过 BRAT 安装与更新（推荐）
 
-> Mobie CC 只有在 Obsidian 官方目录的自动审查通过并发布后，才能通过下面的方法搜索到。目录页面可能显示“尚未经过 Obsidian 员工人工审核”，这是平台自动提供的安全状态，不影响已通过自动审查的插件安装。提交期间请使用 ZIP 手动安装。
+BRAT（Beta Reviewer's Auto-update Tool）是 Obsidian 第三方插件目录中的安装辅助插件，可从 Mobie CC 的公开 GitHub Release 安装并检查更新：
 
-1. 打开 Obsidian，进入“设置 → 第三方插件”。
-2. 关闭受限模式，然后点击“浏览”。
-3. 搜索 **Mobie CC**。
-4. 打开详情页，点击“安装”。
-5. 安装完成后点击“启用”。
+1. 打开“设置 → 第三方插件 → 浏览”，搜索并安装 **BRAT**，然后启用它。
+2. 打开命令面板，执行 `BRAT: Add a beta plugin for testing`；也可以进入 BRAT 设置页点击 `Add Beta Plugin`。
+3. 粘贴公开分发仓库地址：
+
+   ```text
+   https://github.com/bravekingzhang/mobie-cc-releases
+   ```
+
+4. 点击添加并等待 BRAT 完成下载。
+5. 返回“设置 → 第三方插件”，找到 **Mobie CC** 并启用。
 6. 进入“设置 → Mobie CC”，配置模型服务并运行“测试连接”。
-7. 首次加载有 24 小时完整试用；如需继续使用，在设置页按提示完成激活。
+7. 后续可在 BRAT 中检查更新；首次加载仍有 24 小时完整试用。
 
 激活价格为永久版人民币 99 元、一个月版人民币 19.9 元；购买请联系老码小张：`1595819400@qq.com`。
 
-市场版本更新后，可在“设置 → 第三方插件”中执行检查更新与升级。市场安装由 Obsidian 从对应版本的 GitHub Release 下载 `main.js`、`manifest.json` 和 `styles.css`，不需要用户自己处理 Vault 路径。
+BRAT 和 ZIP 最终安装的是同一 Release 产物。BRAT 只是安装与更新工具；通过 BRAT 安装不表示 Mobie CC 已进入官方 Community Plugins 目录或经过 Obsidian 人工审核。
 
 ## 卸载
 
