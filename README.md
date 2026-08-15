@@ -26,7 +26,7 @@ The minimum supported Obsidian version is `1.13.6`. Android has completed the pr
 
 ### Model, privacy, and activation
 
-Users provide their own compatible model API endpoint, model name, and API key. The API key is stored through Obsidian `SecretStorage`. Conversation content, confirmed long-term memory, and note excerpts or web content requested by tools may be sent to the configured model provider. Mobie CC has no client telemetry, hosted model gateway, or activation server. See the [privacy notice](PRIVACY.md).
+Users provide their own compatible model API endpoint, model name, and API key. The API key is stored through Obsidian `SecretStorage`. Conversation content, confirmed long-term memory, and note excerpts or web content requested by tools may be sent to the configured model provider. Mobie CC does not collect Vault content or conversation behavior and has no hosted model gateway or activation server. See the [privacy notice](PRIVACY.md).
 
 The first installation includes a 24-hour full trial. A permanent activation code costs CNY 99, and a one-month activation code costs CNY 19.9. To purchase a code, contact 老码小张 at `1595819400@qq.com`. Expiration never locks the user's notes, existing conversations, candidates, memories, or settings.
 
@@ -88,7 +88,7 @@ API Key 保存于 Obsidian `SecretStorage`。模型费用由用户与所选模�
 
 ## 网络与隐私披露
 
-使用 Agent 时，对话、最近对话、已确认长期记忆，以及工具按需读取的相关笔记片段或网页内容，可能发送给用户配置的第三方模型服务。网页工具会访问公开 HTTPS URL。插件不包含客户端遥测，也不运营模型中转或授权服务器。
+使用 Agent 时，对话、最近对话、已确认长期记忆，以及工具按需读取的相关笔记片段或网页内容，可能发送给用户配置的第三方模型服务。网页工具会访问公开 HTTPS URL。插件不收集 Vault 内容或对话行为，也不运营模型中转或授权服务器。
 
 详细数据边界、删除方式和购买记录处理方式见 [隐私说明](PRIVACY.md)。
 

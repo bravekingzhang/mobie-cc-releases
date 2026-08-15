@@ -130,6 +130,37 @@ BRAT: Check for updates to beta plugins and UPDATE
 - **出现两层同名目录**：把内层 `mobie-cc` 移到 `.obsidian/plugins/`，删除多余外层目录。
 - **iPhone/iPad 无法访问隐藏目录**：改用 BRAT 安装。
 
+## iOS/iPadOS 启动后反复闪退
+
+如果安装或升级后，Obsidian 在加载 Vault 时反复退出，先不要卸载 Obsidian，也不要删除 Vault 或插件的 `data.json`：
+
+1. 完全结束 Obsidian。
+2. 长按主屏幕上的 Obsidian 图标，选择“管理仓库（Manage vaults）”。
+3. 选择出问题的 Vault，再选择“以受限模式打开（Open vault in restricted mode）”。这会暂时停用全部第三方插件，笔记不会被删除。
+4. 受限模式会同时停用 BRAT，不能直接依赖 BRAT 自己更新。请优先在同步该 Vault 的电脑上覆盖最新 `main.js`、`manifest.json`、`styles.css`。如果只能使用手机，则需要用能够显示隐藏文件的文件工具覆盖这三个文件；另一种办法是在外部编辑 `.obsidian/community-plugins.json`，暂时只移除 `mobie-cc`，退出受限模式后让 BRAT 完成更新，再重新启用 Mobie CC。
+5. 如仍无法启动，从同步该 Vault 的电脑或能显示隐藏文件的文件工具中，仅删除：
+
+   ```text
+   <Vault>/.obsidian/plugins/mobie-cc/search-index-v1.json
+   <Vault>/.obsidian/plugins/mobie-cc/search-index-v2.json
+   <Vault>/.obsidian/plugins/mobie-cc/search-index-v2.json.tmp
+   ```
+
+   这些文件只是可重建的检索缓存。不要删除 `data.json`，否则会丢失插件设置与对话状态。
+6. 重新打开 Vault，退出受限模式并启用 Mobie CC。新版不会读取旧版 `search-index-v1.json`；若检测到上次在索引中异常结束，也会先丢弃 v2 缓存，防止再次进入启动循环。
+
+### 导出排障日志
+
+能够进入 Obsidian 后，打开“设置 → Mobie CC → 诊断 → 导出运行日志”。报告会保存到：
+
+```text
+Mobie CC Diagnostics/Mobie-CC-Diagnostics-<时间>.json
+```
+
+请把这份 JSON 发给开发者。它包含索引最后进度、上次未完成操作、Agent/工具关键节点和可捕获的 JavaScript 异常，不包含笔记正文、聊天内容、API Key、激活码或授权签名。
+
+如果是 iPhone/iPad 闪退，再打开系统“设置 → 隐私与安全性 → 分析与改进 → 分析数据”，查找闪退时刻附近的 `Obsidian_<时间>.ips`；如果是内存压力终止，还要查找 `JetsamEvent_<时间>.ips`，选中后用系统分享按钮一并提供。第三方 JavaScript 插件不能自行读取这些系统日志，因此插件 JSON 与 `.ips` 需要配合判断。分享前请自行查看并按需要遮盖敏感环境信息。
+
 ## 首次使用
 
 1. 打开“设置 → Mobie CC”。
