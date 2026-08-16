@@ -4,6 +4,7 @@ Mobie CC bundles the following MIT-licensed components:
 
 - `@noble/ed25519` 3.1.0 — Copyright (c) 2019 Paul Miller (https://paulmillr.com)
 - `@noble/hashes` 2.2.0 — Copyright (c) 2022 Paul Miller (https://paulmillr.com)
+- `khazix-writer` 内置 Skill — Copyright (c) 2026 数字生命卡兹克，来源 https://github.com/KKKKhazix/khazix-skills ，原样内置分发
 
 Both components are distributed under the following MIT License:
 
