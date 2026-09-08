@@ -1,5 +1,9 @@
 # Mobie CC 版本说明
 
+## 0.4.1 — 2026-09-08
+
+- 新增第三种模型协议「OpenAI Responses」（`<baseUrl>/responses`）：适用于 OpenAI 官方、Azure OpenAI、OpenRouter 等支持该协议的服务，在设置 → 模型协议中选择。按无状态模式调用（`store: false`，不在服务端留存对话），只使用自有 Vault 工具、不启用 OpenAI 内置联网/文件工具以保持现有权限边界；把智谱、DeepSeek 等仅支持 Chat Completions 的网关配到该协议时，404 错误会提示切回 OpenAI compatible。
+
 ## 0.4.0 — 2026-09-07
 
 知识工作流升级（详见 `docs/specs/knowledge-workflows.md`）：
